@@ -2,39 +2,58 @@
 <html>
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
   <style>
     html {
       font-family: sans-serif;
+    }
+    .menu {
+      position: absolute;
+      top: 26%;
+      right: 0%;
+      width: 39%;
     }
     body {
       width: 1000px;
       margin: 0 auto;
       font-size: 0;
     }
-
     body > * {
       font-size: 1rem;
     }
-
     header {
+      position: relative;
       text-align: center;
-      font-family: cursive, sans-serif;
+      font-family: Qwigley, cursive, sans-serif;
       font-size: 4vmin;
+      border-bottom: 24px solid #754b23;
     }
-
     .top-image {
-      background-color: orange;
       height: 100px;
+      background-image: url("images/header.png");
+      background-repeat: no-repeat;
     }
-
     main {
-      border-top: 24px solid #754b23;
+      width: 55%;
+      display: table-cell;
     }
-
+    aside {
+      width: 45%;
+      background-image: url("images/strips2.png");
+      background-size: 100%;
+      background-repeat: repeat-y;
+      display: table-cell;
+    }
     footer {
       height: 80px;
       padding-top: 20px;
       background-color: #06b4af;
+      color: white;
+    }
+    footer > div {
+      width: 33.33%;
+      float: left;
+      text-align: center;
     }
   </style>
 </head>
@@ -44,6 +63,7 @@
     <div class="top-image"></div>
     <img src="images/logo.png" alt="Cupcake Logo">
     <div>We deliver cupcakes for the important events in your life!</div>
+    <img src="images/faux-menu.png" alt="titles - Home - About Us - Services - Contact" class="menu">
   </header>
   <main>
     <h1>We cherish the sweet moments…</h1>
@@ -60,8 +80,13 @@
     <p>Their delicious taste, great variety and fine flavors will delight you! The best choice for a chic dessert! How can you
     possibly resist?</p>
   </main>
+  <aside></aside>
   <img src="images/cupcakes.png" alt="Four Yummy Cupcakes">
-  <footer></footer>
+  <footer>
+    <div>Sweetcorner.com</div>
+    <div>&copy; 2018 all rights reserved</div>
+    <div>800 264 2099</div>
+  </footer>
 </body>
 
 </html>
