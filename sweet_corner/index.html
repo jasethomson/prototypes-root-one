@@ -3,15 +3,33 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <style>
     html {
       font-family: sans-serif;
     }
-    .menu {
+    .nav {
       position: absolute;
-      top: 26%;
+      margin: 0;
+      padding: 0;
+      width: 40%;
       right: 0%;
-      width: 39%;
+      top: 0%;
+      font-size: 0;
+    }
+    ul.nav > li {
+      font-size: .75rem;
+      display: inline-block;
+      text-transform: uppercase;
+      width: 25%;
+      text-align: center;
+      text-shadow: 1px 1px 3px darkgrey;
+      font-family: sans-serfif;
+      cursor: pointer;
+    }
+    ul.nav > li:hover{
+      color: orange;
     }
     body {
       width: 1000px;
@@ -29,15 +47,18 @@
       border-bottom: 24px solid #754b23;
     }
     .top-image {
+      position: relative;
       height: 100px;
       background-image: url("images/header.png");
       background-repeat: no-repeat;
     }
     main {
+      position: relative;
       width: 55%;
       display: table-cell;
     }
     aside {
+      position: relative;
       width: 45%;
       background-image: url("images/strips2.png");
       background-size: 100%;
@@ -51,19 +72,39 @@
       color: white;
     }
     footer > div {
+      height: 100%;
       width: 33.33%;
       float: left;
       text-align: center;
+    }
+    footer i {
+      margin-right: 3px;
+    }
+    footer > div.dots {
+      background-image: url("images/dots-footer.png");
+      background-repeat: no-repeat;
+      background-position-x: 30px;
+      background-position-y: 0px;
+    }
+    aside > img.dots {
+      position: absolute;
+      top: 10%;
+      right: 20%;
     }
   </style>
 </head>
 
 <body>
+  <div class="top-image"></div>
   <header>
-    <div class="top-image"></div>
     <img src="images/logo.png" alt="Cupcake Logo">
     <div>We deliver cupcakes for the important events in your life!</div>
-    <img src="images/faux-menu.png" alt="titles - Home - About Us - Services - Contact" class="menu">
+    <ul class="nav">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
   </header>
   <main>
     <h1>We cherish the sweet moments…</h1>
@@ -80,12 +121,14 @@
     <p>Their delicious taste, great variety and fine flavors will delight you! The best choice for a chic dessert! How can you
     possibly resist?</p>
   </main>
-  <aside></aside>
+  <aside>
+    <img class="dots" src="images/dots-box2.png" alt="image of neat dots">
+  </aside>
   <img src="images/cupcakes.png" alt="Four Yummy Cupcakes">
   <footer>
-    <div>Sweetcorner.com</div>
+    <div class="dots"></div>
     <div>&copy; 2018 all rights reserved</div>
-    <div>800 264 2099</div>
+    <div><i class="fa fa-phone"></i>800 264 2099</div>
   </footer>
 </body>
 
